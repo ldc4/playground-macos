@@ -344,7 +344,7 @@ export default class Terminal extends Component {
       <div key={`terminal-input-row-${id}`} className="w-full h-6 flex">
         <div className="w-max flex items-center">
           <span className="text-yellow-200">
-            zou@macbook-pro{" "}
+            root@macbook-pro{" "}
             <span className="text-green-300">{this.getCurDirName()}</span>
           </span>
           <span className="ml-1.5 text-red-400">{">"}</span>

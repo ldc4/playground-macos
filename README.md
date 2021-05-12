@@ -1,41 +1,24 @@
 # playground-macos
 
-My portfolio website simulating macOS's GUI: https://portfolio.zxh.io
+## reference
 
-Powered by [React](https://reactjs.org/) + [React Redux](https://react-redux.js.org/) + [tailwindcss](https://tailwindcss.com/).
+https://github.com/Renovamen/playground-macos.git
 
-![day](./public/screenshots/day.png)
-![night](./public/screenshots/night.png)
+## Env
 
-
-&nbsp;
+node v12.21.0
+npm 6.14.11
 
 ## Usage
 
 ```bash
-yarn install
+npm install
 
-# serve with hot reload, open http://localhost:3000 to view it in the browser
-yarn dev
+npm run init (only first)
 
-# build for production with minification to the `build` folder
-yarn build
+npm run dev
+
+npm run build
 ```
 
 
-&nbsp;
-
-## Credits
-
-- [macOS Big Sur](https://www.apple.com/in/macos/big-sur/)
-- [macOS Catalina](https://www.apple.com/bw/macos/catalina/)
-- [macOS Icon Gallery](https://www.macosicongallery.com/)
-- [sindresorhus/file-icon-cli](https://github.com/sindresorhus/file-icon-cli)
-- [vivek9patel.github.io](https://github.com/vivek9patel/vivek9patel.github.io)
-
-
-&nbsp;
-
-## License
-
-[MIT](MIT)

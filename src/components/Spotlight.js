@@ -1,7 +1,7 @@
 import React, { Component, createRef } from "react";
 import format from "date-fns/format";
 import { BiSearch } from "react-icons/bi";
-import apps from "../configs/apps";
+import apps from "../configs/apps2";
 import launchpad from "../configs/launchpad";
 
 const allApps = {
