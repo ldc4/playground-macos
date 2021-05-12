@@ -8,7 +8,7 @@ export default function Dock({
   showApps,
   showLaunchpad,
   toggleLaunchpad,
-  hide
+  hide,
 }) {
   const openApp = (id) => {
     if (id === "launchpad") toggleLaunchpad(!showLaunchpad);
@@ -24,7 +24,7 @@ export default function Dock({
     <div
       className="dock w-full sm:w-max fixed left-0 right-0 mx-auto bottom-0 overflow-x-scroll sm:overflow-x-visible"
       style={{
-        zIndex: hide ? 0 : 99999
+        zIndex: hide ? 0 : 99999,
       }}
     >
       <ul

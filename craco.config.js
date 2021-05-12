@@ -1,11 +1,8 @@
 module.exports = {
   style: {
     postcss: {
-      plugins: [
-        require("tailwindcss"),
-        require("autoprefixer")
-      ]
-    }
+      plugins: [require("tailwindcss"), require("autoprefixer")],
+    },
   },
   webpack: {
     configure: {
@@ -13,10 +10,10 @@ module.exports = {
         rules: [
           {
             test: /\.md$/,
-            use: "asset/resource"
-          }
-        ]
-      }
-    }
-  }
-}
+            use: "asset/resource",
+          },
+        ],
+      },
+    },
+  },
+};

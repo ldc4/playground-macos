@@ -6,7 +6,7 @@ import launchpad from "../configs/launchpad";
 
 const allApps = {
   app: apps,
-  portfolio: launchpad
+  portfolio: launchpad,
 };
 
 const getRandom = (min, max) => {
@@ -29,7 +29,7 @@ export default class Spotlight extends Component {
       searchText: "",
       curDetails: null,
       appList: null,
-      appIdList: []
+      appIdList: [],
     };
     this.curSelectIndex = 0;
     this.spotlightRef = createRef();
@@ -128,7 +128,7 @@ export default class Spotlight extends Component {
 
     return {
       appList: appList,
-      appIdList: appIdList
+      appIdList: appIdList,
     };
   };
 
@@ -162,7 +162,7 @@ export default class Spotlight extends Component {
     );
     this.setState({
       appList: appList,
-      appIdList: appIdList
+      appIdList: appIdList,
     });
   };
 
@@ -232,7 +232,7 @@ export default class Spotlight extends Component {
     // update search text and associating app list
     this.setState(
       {
-        searchText: e.target.value
+        searchText: e.target.value,
       },
       () => this.updateAppList()
     );

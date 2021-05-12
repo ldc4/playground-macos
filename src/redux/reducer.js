@@ -7,7 +7,7 @@ const initState = {
   wifi: true,
   bluetooth: true,
   airdrop: true,
-  fullscreen: false
+  fullscreen: false,
 };
 
 export const Reducer = (state = initState, action = {}) => {
@@ -15,37 +15,37 @@ export const Reducer = (state = initState, action = {}) => {
     case type.TOGGLE_DARK:
       return {
         ...state,
-        dark: action.dark
+        dark: action.dark,
       };
     case type.SET_VOLUME:
       return {
         ...state,
-        volume: action.volume
+        volume: action.volume,
       };
     case type.SET_BRIGHTNESS:
       return {
         ...state,
-        brightness: action.brightness
+        brightness: action.brightness,
       };
     case type.TOGGLE_FULLSCREEN:
       return {
         ...state,
-        fullscreen: action.fullscreen
+        fullscreen: action.fullscreen,
       };
     case type.TOGGLE_WIFI:
       return {
         ...state,
-        wifi: action.wifi
+        wifi: action.wifi,
       };
     case type.TOGGLE_BLUETOOTH:
       return {
         ...state,
-        bluetooth: action.bluetooth
+        bluetooth: action.bluetooth,
       };
     case type.TOGGLE_AIRDROP:
       return {
         ...state,
-        airdrop: action.airdrop
+        airdrop: action.airdrop,
       };
     default:
       return state;

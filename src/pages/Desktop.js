@@ -23,7 +23,7 @@ class Desktop extends Component {
       currentTitle: "Finder",
       hideDock: false,
       spotlight: false,
-      spotlightBtnRef: null
+      spotlightBtnRef: null,
     };
   }
 
@@ -40,19 +40,19 @@ class Desktop extends Component {
     apps.forEach((app) => {
       showApps = {
         ...showApps,
-        [app.id]: app.show
+        [app.id]: app.show,
       };
       appsZ = {
         ...appsZ,
-        [app.id]: 2
+        [app.id]: 2,
       };
       maxApps = {
         ...maxApps,
-        [app.id]: false
+        [app.id]: false,
       };
       minApps = {
         ...minApps,
-        [app.id]: false
+        [app.id]: false,
       };
     });
 
@@ -94,7 +94,7 @@ class Desktop extends Component {
     showApps[id] = false;
     this.setState({
       showApps: showApps,
-      hideDock: false
+      hideDock: false,
     });
   };
 
@@ -114,7 +114,7 @@ class Desktop extends Component {
       maxZ: maxZ,
       currentTitle: apps.find((app) => {
         return app.id === id;
-      }).title
+      }).title,
     });
 
     let minApps = this.state.minApps;
@@ -138,7 +138,7 @@ class Desktop extends Component {
     maxApps[id] = target;
     this.setState({
       maxApps: maxApps,
-      hideDock: target
+      hideDock: target,
     });
   };
 
@@ -147,7 +147,7 @@ class Desktop extends Component {
     if (target === undefined) target = !minApps[id];
     minApps[id] = target;
     this.setState({
-      minApps: minApps
+      minApps: minApps,
     });
   };
 
@@ -190,7 +190,7 @@ class Desktop extends Component {
           close: this.closeApp,
           setMax: this.setAppMax,
           setMin: this.minimizeApp,
-          focus: this.openApp
+          focus: this.openApp,
         };
 
         return (
@@ -212,7 +212,7 @@ class Desktop extends Component {
           backgroundImage: `url(${
             this.props.dark ? wallpapers.night : wallpapers.day
           })`,
-          filter: `brightness( ${this.props.brightness * 0.7 + 50}% )`
+          filter: `brightness( ${this.props.brightness * 0.7 + 50}% )`,
         }}
       >
         {/* Dark Model Toggler */}
@@ -228,7 +228,7 @@ class Desktop extends Component {
           toggleSpotlight={this.toggleSpotlight}
           setSpotlightBtnRef={(value) => {
             this.setState({
-              spotlightBtnRef: value
+              spotlightBtnRef: value,
             });
           }}
         />
@@ -265,7 +265,7 @@ class Desktop extends Component {
 const mapStateToProps = (state) => {
   return {
     dark: state.dark,
-    brightness: state.brightness
+    brightness: state.brightness,
   };
 };
 

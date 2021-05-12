@@ -7,7 +7,7 @@ const emojis = [
   "(^-^*)",
   "(╯‵□′)╯",
   "\\(°ˊДˋ°)/",
-  "╰(‵□′)╯"
+  "╰(‵□′)╯",
 ];
 
 const getEmoji = () => {
@@ -97,7 +97,7 @@ export default class Terminal extends Component {
     super(props);
     this.state = {
       content: [],
-      rmrf: false
+      rmrf: false,
     };
     this.history = [];
     this.curHistory = 0;
@@ -109,7 +109,7 @@ export default class Terminal extends Component {
       ls: this.ls,
       cat: this.cat,
       clear: this.clear,
-      help: this.help
+      help: this.help,
     };
   }
 

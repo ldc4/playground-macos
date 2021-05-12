@@ -19,7 +19,7 @@ class Login extends Component {
         style={{
           background: `url(${
             this.props.dark ? wallpapers.night : wallpapers.day
-          }) center/cover no-repeat`
+          }) center/cover no-repeat`,
         }}
         onClick={() => this.props.setLogin(true)}
       >
@@ -90,7 +90,7 @@ class Login extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    dark: state.dark
+    dark: state.dark,
   };
 };
 

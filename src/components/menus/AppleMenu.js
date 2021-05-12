@@ -7,7 +7,7 @@ export default function AppleMenu({
   restart,
   sleep,
   toggleAppleMenu,
-  btnRef
+  btnRef,
 }) {
   const ref = useRef(null);
 

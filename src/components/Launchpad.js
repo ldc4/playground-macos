@@ -10,7 +10,7 @@ class Launchpad extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      searchText: ""
+      searchText: "",
     };
   }
 
@@ -39,7 +39,7 @@ class Launchpad extends Component {
           zIndex: 99998,
           backgroundImage: `url(${
             this.props.dark ? wallpapers.night : wallpapers.day
-          })`
+          })`,
         }}
       >
         <div className="w-full h-full absolute bg-gray-900 bg-opacity-20 blur">
@@ -58,7 +58,7 @@ class Launchpad extends Component {
           <div
             className="mx-auto mt-8 w-full px-4 sm:px-10 grid grid-flow-row grid-cols-4 sm:grid-cols-7"
             style={{
-              maxWidth: "1100px"
+              maxWidth: "1100px",
             }}
           >
             {this.search().map((app) => (
@@ -95,7 +95,7 @@ class Launchpad extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    dark: state.dark
+    dark: state.dark,
   };
 };
 

@@ -74,7 +74,7 @@ class NavPage extends Component {
         style={{
           backgroundImage: `url(${
             this.props.dark ? wallpapers.night : wallpapers.day
-          })`
+          })`,
         }}
       >
         <div className="w-full pt-8 bg-gray-100 bg-opacity-80 blur">
@@ -126,7 +126,7 @@ class NoInternetPage extends Component {
         style={{
           backgroundImage: `url(${
             this.props.dark ? wallpapers.night : wallpapers.day
-          })`
+          })`,
         }}
       >
         <div className="w-full h-full bg-gray-100 bg-opacity-80 blur flex items-center justify-center">
@@ -154,7 +154,7 @@ class Safari extends Component {
     super(props);
     this.state = {
       goURL: "",
-      currentURL: ""
+      currentURL: "",
     };
   }
 
@@ -173,7 +173,7 @@ class Safari extends Component {
 
     this.setState({
       goURL: url,
-      currentURL: url
+      currentURL: url,
     });
   };
 
@@ -258,7 +258,7 @@ class Safari extends Component {
 const mapStateToProps = (state) => {
   return {
     dark: state.dark,
-    wifi: state.wifi
+    wifi: state.wifi,
   };
 };
 

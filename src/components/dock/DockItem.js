@@ -13,7 +13,7 @@ const distanceInput = [
   0,
   distanceLimit / 2,
   distanceLimit / 1.25,
-  distanceLimit
+  distanceLimit,
 ];
 const widthOutput = [
   baseWidth,
@@ -22,7 +22,7 @@ const widthOutput = [
   baseWidth * 2,
   baseWidth * 1.5,
   baseWidth * 1.1,
-  baseWidth
+  baseWidth,
 ];
 const beyondTheDistanceLimit = distanceLimit + 1;
 
@@ -32,7 +32,7 @@ const useDockHoverAnimation = (mouseX, ref) => {
     useTransform(distance, distanceInput, widthOutput),
     {
       stiffness: 1300,
-      damping: 82
+      damping: 82,
     }
   );
 
@@ -82,7 +82,7 @@ export default function DockItem({
   desktop,
   openApp,
   isOpen,
-  link
+  link,
 }) {
   const imgRef = useRef();
   const { width } = useDockHoverAnimation(mouseX, imgRef);

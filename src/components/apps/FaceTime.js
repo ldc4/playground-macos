@@ -2,7 +2,7 @@ import React, { Component, createRef } from "react";
 import Webcam from "react-webcam";
 
 const videoConstraints = {
-  facingMode: "user"
+  facingMode: "user",
 };
 
 export default class FaceTime extends Component {
@@ -10,7 +10,7 @@ export default class FaceTime extends Component {
     super(props);
     this.state = {
       img: null,
-      click: false
+      click: false,
     };
     this.webcamRef = createRef();
   }

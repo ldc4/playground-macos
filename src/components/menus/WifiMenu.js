@@ -52,10 +52,10 @@ class WifiMenu extends Component {
 const mapStateToProps = (state) => {
   return {
     dark: state.dark,
-    wifi: state.wifi
+    wifi: state.wifi,
   };
 };
 
 export default connect(mapStateToProps, {
-  toggleWIFI
+  toggleWIFI,
 })(WifiMenu);

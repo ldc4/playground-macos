@@ -42,14 +42,6 @@
       "react-app/jest",
       "plugin:prettier/recommended"
     ],
-    "rules": {
-      "prettier/prettier": [
-        "error",
-        {
-          "trailingComma": "none"
-        }
-      ]
-    },
     "ignorePatterns": [
       "node_modules/",
       "build/"

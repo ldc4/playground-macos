@@ -91,7 +91,7 @@ export default class Window extends Component {
       maxW: maxW,
       maxH: maxH,
       x: Math.random() * (maxW - width),
-      y: Math.random() * (maxH - height)
+      y: Math.random() * (maxH - height),
     };
     this.resize.bind(this);
   }
@@ -114,7 +114,7 @@ export default class Window extends Component {
       maxW: maxW,
       maxH: maxH,
       width: width,
-      height: height
+      height: height,
     });
   };
 
@@ -135,7 +135,7 @@ export default class Window extends Component {
       <Rnd
         size={{
           width: width,
-          height: height
+          height: height,
         }}
         position={{
           x: this.props.max
@@ -149,7 +149,7 @@ export default class Window extends Component {
             : Math.min(
                 window.innerHeight - minMarginY,
                 Math.max(minMarginY, this.state.y)
-              )
+              ),
         }}
         onDragStop={(e, d) => {
           this.setState({ x: d.x, y: d.y });
@@ -158,7 +158,7 @@ export default class Window extends Component {
           this.setState({
             width: parseInt(ref.style.width),
             height: parseInt(ref.style.height),
-            ...position
+            ...position,
           });
         }}
         minWidth={this.props.minWidth ? this.props.minWidth : 200}

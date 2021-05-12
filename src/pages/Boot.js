@@ -5,7 +5,7 @@ export default class Boot extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      percent: 0
+      percent: 0,
     };
     this.intervalId = null;
   }
@@ -51,7 +51,7 @@ export default class Boot extends Component {
             <span
               className="absolute top-0 bg-white h-full rounded-sm"
               style={{
-                width: `${this.state.percent.toString()}%`
+                width: `${this.state.percent.toString()}%`,
               }}
             />
           </div>

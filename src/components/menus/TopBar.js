@@ -40,11 +40,11 @@ class TopBar extends Component {
       showControlCenter: false,
       showWifiMenu: false,
       showAppleMenu: false,
-      playing: false
+      playing: false,
     };
     this.clickedOutside = {
       apple: false,
-      control: false
+      control: false,
     };
     this.intervalId = null;
     this.toggleAudio = this.toggleAudio.bind(this);
@@ -62,7 +62,7 @@ class TopBar extends Component {
     // store intervalId in the state, so we can clear interval later
     this.intervalId = setInterval(() => {
       this.setState({
-        date: new Date()
+        date: new Date(),
       });
     }, 60 * 1000);
 
@@ -107,19 +107,19 @@ class TopBar extends Component {
 
   toggleControlCenter = () => {
     this.setState({
-      showControlCenter: !this.state.showControlCenter
+      showControlCenter: !this.state.showControlCenter,
     });
   };
 
   toggleAppleMenu = () => {
     this.setState({
-      showAppleMenu: !this.state.showAppleMenu
+      showAppleMenu: !this.state.showAppleMenu,
     });
   };
 
   toggleWifiMenu = () => {
     this.setState({
-      showWifiMenu: !this.state.showWifiMenu
+      showWifiMenu: !this.state.showWifiMenu,
     });
   };
 
@@ -237,12 +237,12 @@ const mapStateToProps = (state) => {
   return {
     volume: state.volume,
     brightness: state.brightness,
-    wifi: state.wifi
+    wifi: state.wifi,
   };
 };
 
 export default connect(mapStateToProps, {
   setVolume,
   setBrightness,
-  toggleFullScreen
+  toggleFullScreen,
 })(TopBar);

@@ -24,7 +24,7 @@ const Highlighter = (dark) => {
       ) : (
         <code className={className}>{children}</code>
       );
-    }
+    },
   };
 };
 
@@ -103,7 +103,7 @@ class Content extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      storeMd: {}
+      storeMd: {},
     };
   }
 
@@ -154,7 +154,7 @@ class Bear extends Component {
       curMidbar: 0,
       midbarList: bear[0].md,
       contentURL: bear[0].md[0].file,
-      contentID: bear[0].md[0].id
+      contentID: bear[0].md[0].id,
     };
   }
 
@@ -164,7 +164,7 @@ class Bear extends Component {
       curSidebar: index,
       contentURL: items[0].file,
       contentID: items[0].id,
-      curMidbar: 0
+      curMidbar: 0,
     });
   };
 
@@ -172,7 +172,7 @@ class Bear extends Component {
     this.setState({
       contentID: id,
       contentURL: url,
-      curMidbar: index
+      curMidbar: index,
     });
   };
 
@@ -203,7 +203,7 @@ class Bear extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    dark: state.dark
+    dark: state.dark,
   };
 };
 

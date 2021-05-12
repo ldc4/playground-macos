@@ -7,7 +7,7 @@ import {
   toggleWIFI,
   toggleAirdrop,
   toggleBleutooth,
-  toggleFullScreen
+  toggleFullScreen,
 } from "../../redux/action";
 import music from "../../configs/music";
 
@@ -18,7 +18,7 @@ import {
   BsPlayFill,
   BsPauseFill,
   BsFullscreen,
-  BsFullscreenExit
+  BsFullscreenExit,
 } from "react-icons/bs";
 import { IoSunny, IoMoon, IoVolumeHigh } from "react-icons/io5";
 import { FaWifi } from "react-icons/fa";
@@ -206,7 +206,7 @@ const mapStateToProps = (state) => {
     bluetooth: state.bluetooth,
     airdrop: state.airdrop,
     fullscreen: state.fullscreen,
-    volume: state.volume
+    volume: state.volume,
   };
 };
 
@@ -215,5 +215,5 @@ export default connect(mapStateToProps, {
   toggleWIFI,
   toggleAirdrop,
   toggleBleutooth,
-  toggleFullScreen
+  toggleFullScreen,
 })(ControlCenterMenu);

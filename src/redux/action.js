@@ -8,28 +8,28 @@ export const type = {
   TOGGLE_WIFI: "TOGGLE_WIFI",
   TOGGLE_BLUETOOTH: "TOGGLE_BLUETOOTH",
   TOGGLE_AIRDROP: "TOGGLE_AIRDROP",
-  TOGGLE_FULLSCREEN: "TOGGLE_FULLSCREEN"
+  TOGGLE_FULLSCREEN: "TOGGLE_FULLSCREEN",
 };
 
 export const toggleDark = (dark) => {
   nightwind.toggle();
   return {
     type: type.TOGGLE_DARK,
-    dark
+    dark,
   };
 };
 
 export const setVolume = (volume) => {
   return {
     type: type.SET_VOLUME,
-    volume
+    volume,
   };
 };
 
 export const setBrightness = (brightness) => {
   return {
     type: type.SET_BRIGHTNESS,
-    brightness
+    brightness,
   };
 };
 
@@ -37,27 +37,27 @@ export const toggleFullScreen = (fullscreen) => {
   fullscreen ? enterFullScreen() : exitFullScreen();
   return {
     type: type.TOGGLE_FULLSCREEN,
-    fullscreen
+    fullscreen,
   };
 };
 
 export const toggleWIFI = (wifi) => {
   return {
     type: type.TOGGLE_WIFI,
-    wifi
+    wifi,
   };
 };
 
 export const toggleBleutooth = (bluetooth) => {
   return {
     type: type.TOGGLE_BLUETOOTH,
-    bluetooth
+    bluetooth,
   };
 };
 
 export const toggleAirdrop = (airdrop) => {
   return {
     type: type.TOGGLE_AIRDROP,
-    airdrop
+    airdrop,
   };
 };
