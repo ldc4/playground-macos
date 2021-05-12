@@ -7,7 +7,7 @@ import Dock from "../components/dock/Dock";
 import Launchpad from "../components/Launchpad";
 import Window from "../components/Window";
 import Spotlight from "../components/Spotlight";
-import apps from "../configs/apps2";
+import apps from "../configs/apps";
 import wallpapers from "../configs/wallpapers";
 
 class Desktop extends Component {

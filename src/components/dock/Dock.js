@@ -1,6 +1,6 @@
 import React from "react";
 import { useMotionValue } from "framer-motion";
-import apps from "../../configs/apps2";
+import apps from "../../configs/apps";
 import DockItem from "./DockItem";
 
 export default function Dock({
