@@ -77,7 +77,7 @@ class NavPage extends Component {
           })`,
         }}
       >
-        <div className="w-full pt-8 bg-gray-100 bg-opacity-80 blur">
+        <div className="w-full h-full pt-8 bg-gray-100 bg-opacity-80 blur">
           {/* Favorites */}
           <NavSection
             section={websites.favorites}
