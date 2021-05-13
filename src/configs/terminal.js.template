@@ -8,9 +8,9 @@ const terminal = [
         id: "about-bio",
         title: "bio.txt",
         type: "file",
-        content: <div className="py-1">todo</div>
-      }
-    ]
+        content: <div className="py-1">todo</div>,
+      },
+    ],
   },
   {
     id: "about-dream",
@@ -30,8 +30,8 @@ const terminal = [
           <span>{"}"}</span>
         </div>
       </div>
-    )
-  }
+    ),
+  },
 ];
 
 export default terminal;

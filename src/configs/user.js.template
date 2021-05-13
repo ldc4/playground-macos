@@ -1,6 +1,6 @@
 const user = {
   name: "Anonymity",
-  avatar: "img/ui/avatar.png"
+  avatar: "img/ui/avatar.png",
 };
 
 export default user;

@@ -7,15 +7,15 @@ const websites = {
         title: "Blog",
         img: "",
         link: "",
-        inner: true
+        inner: true,
       },
       {
         id: "my-github",
         title: "Github",
         img: "img/sites/github.svg",
-        link: "https://github.com/Renovamen"
-      }
-    ]
+        link: "https://github.com/Renovamen",
+      },
+    ],
   },
   freq: {
     title: "Frequently Visited",
@@ -24,16 +24,16 @@ const websites = {
         id: "zhihu",
         title: "知乎",
         img: "img/sites/zhihu.jpeg",
-        link: "https://www.zhihu.com/"
+        link: "https://www.zhihu.com/",
       },
       {
         id: "bilibili",
         title: "Bilibili",
         img: "img/sites/bilibili.svg",
-        link: "https://www.bilibili.com/"
-      }
-    ]
-  }
+        link: "https://www.bilibili.com/",
+      },
+    ],
+  },
 };
 
 export default websites;

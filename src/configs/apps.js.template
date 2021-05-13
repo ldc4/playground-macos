@@ -9,7 +9,7 @@ const apps = [
     id: "launchpad",
     title: "Launchpad",
     desktop: false,
-    img: "img/icons/launchpad.png"
+    img: "img/icons/launchpad.png",
   },
   {
     id: "bear",
@@ -19,7 +19,7 @@ const apps = [
     width: 860,
     height: 500,
     img: "img/icons/bear.png",
-    content: <Bear />
+    content: <Bear />,
   },
   {
     id: "safari",
@@ -30,7 +30,7 @@ const apps = [
     minWidth: 375,
     minHeight: 200,
     img: "img/icons/safari.png",
-    content: <Safari />
+    content: <Safari />,
   },
   {
     id: "vscode",
@@ -38,7 +38,7 @@ const apps = [
     desktop: true,
     show: false,
     img: "img/icons/vscode.png",
-    content: <VSCode />
+    content: <VSCode />,
   },
   {
     id: "facetime",
@@ -47,7 +47,7 @@ const apps = [
     show: false,
     img: "img/icons/facetime.png",
     height: 530,
-    content: <FaceTime />
+    content: <FaceTime />,
   },
   {
     id: "terminal",
@@ -55,22 +55,22 @@ const apps = [
     desktop: true,
     show: false,
     img: "img/icons/terminal.png",
-    content: <Terminal />
+    content: <Terminal />,
   },
   {
     id: "email",
     title: "Mail",
     desktop: false,
     img: "img/icons/mail.png",
-    link: "mailto:youremail@gmail.com"
+    link: "mailto:youremail@gmail.com",
   },
   {
     id: "github",
     title: "Github",
     desktop: false,
     img: "img/icons/github.png",
-    link: ""
-  }
+    link: "",
+  },
 ];
 
 export default apps;

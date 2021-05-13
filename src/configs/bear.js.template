@@ -14,9 +14,9 @@ const bear = [
         title: "About Me",
         file: "markdown/about-me.md",
         icon: <GiNinjaHeroicStance />,
-        excerpt: "Hey there! I'm a dragon lost in human world..."
-      }
-    ]
+        excerpt: "Hey there! I'm a dragon lost in human world...",
+      },
+    ],
   },
   {
     id: "project",
@@ -30,10 +30,10 @@ const bear = [
           "https://raw.githubusercontent.com/facebook/react/master/README.md",
         icon: <HiFire />,
         excerpt: "A JavaScript library for building user interfaces...",
-        link: "https://reactjs.org/"
-      }
-    ]
-  }
+        link: "https://reactjs.org/",
+      },
+    ],
+  },
 ];
 
 export default bear;
