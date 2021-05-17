@@ -5,6 +5,4 @@ node_modules
 build
 .npmrc
 .yarnrc
-src/configs/*
-!src/configs/*.template
 *.yaml
