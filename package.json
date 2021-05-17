@@ -2,6 +2,7 @@
   "name": "playground-macos",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://ldc4.github.io/playground-macos",
   "scripts": {
     "init": "node cli/init.js",
     "dev": "craco start",
